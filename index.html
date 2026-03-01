@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>David Rusu | Front-End Developer</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        body {
+            background: #0f172a;
+            color: #f8fafc;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 40px;
+        }
+
+        .container {
+            text-align: center;
+            max-width: 900px;
+        }
+
+        h1 {
+            font-size: 38px;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            opacity: 0.7;
+            margin-bottom: 50px;
+        }
+
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+        }
+
+        .card {
+            background: #1e293b;
+            padding: 30px;
+            border-radius: 16px;
+            text-decoration: none;
+            color: white;
+            transition: 0.3s ease;
+            border: 1px solid rgba(255,255,255,0.05);
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            background: #263244;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+        }
+
+        .card h2 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            font-size: 14px;
+            opacity: 0.7;
+            line-height: 1.5;
+        }
+
+        .footer {
+            margin-top: 60px;
+            font-size: 13px;
+            opacity: 0.5;
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+
+    <h1>David Rusu</h1>
+    <p class="subtitle">Front-End Developer | JavaScript Projects</p>
+
+    <div class="projects">
+
+        <a class="card" href="https://daviderusu71.github.io/Admin-Dashboard/" target="_blank">
+            <h2>Admin Dashboard</h2>
+            <p>
+                Dashboard modern cu autentificare, grafice interactive,
+                task manager și sistem de notificări.
+            </p>
+        </a>
+
+        <a class="card" href="https://daviderusu71.github.io/Mini-CRM-Pro/" target="_blank">
+            <h2>Mini CRM Pro</h2>
+            <p>
+                Aplicație CRM completă cu management clienți,
+                statistici live, revenue tracking și export CSV.
+            </p>
+        </a>
+
+    </div>
+
+    <div class="footer">
+        © 2026 David Rusu – All rights reserved
+    </div>
+
+</div>
+
+</body>
+</html>
